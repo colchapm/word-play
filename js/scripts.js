@@ -6,12 +6,19 @@ $(document).ready(function() {
 
     const words = str.split(" ")
 
-    let bigWords = [];
-    words.forEach(function(element) {
+    // let bigWords = [];
+    
+    const bigWords = words.filter(function(element) {
       if (element.length >= 3) {
-        bigWords.push(element);
+        return element
       } else {}
     });
+
+    // words.forEach(function(element) {
+    //   if (element.length >= 3) {
+    //     bigWords.push(element);
+    //   } else {}
+    // });
 
     let bigWordsReverse = bigWords.reverse();
 
